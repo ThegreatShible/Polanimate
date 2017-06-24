@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fillWidth="false" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+    <children>
+        <AnchorPane fx:id="Dr" maxHeight="-1.0" maxWidth="-1.0" prefHeight="400.0" prefWidth="669.0" VBox.vgrow="ALWAYS">
+            <children>
+                <Label alignment="CENTER" layoutX="183.0" layoutY="53.0" prefHeight="31.0" prefWidth="274.0" style="&#10;" text="Connectez vous a votre compte" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+                <JFXTextField fx:id="user" labelFloat="true" layoutX="246.0" layoutY="147.0" promptText="User name" style="-fx-background-color: LightBlue;" />
+                <JFXPasswordField fx:id="password" labelFloat="true" layoutX="247.0" layoutY="218.0" promptText="Password" style="-fx-background-color: ;" />
+                <JFXButton fx:id="loginButton" layoutX="199.0" layoutY="282.0" prefHeight="25.0" prefWidth="81.0" ripplerFill="#8a9cff" text="Connect" />
+                <JFXComboBox fx:id="Cbox" layoutX="339.0" layoutY="282.0" onAction="#chioce" promptText="Connecter en tant que " />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+    </stylesheets>
+</VBox>

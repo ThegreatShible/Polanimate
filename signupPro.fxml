@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="Dr1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="600.0" stylesheets="@Ui.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <JFXTextField fx:id="name" labelFloat="true" layoutX="163.0" layoutY="39.0" maxWidth="295.0" minWidth="295.0" prefColumnCount="25" prefHeight="33.0" prefWidth="295.0" promptText="Nom" stylesheets="@Ui.css">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="pname" labelFloat="true" layoutX="163.0" layoutY="111.0" prefColumnCount="25" promptText="Prénom" stylesheets="@Ui.css" />
+      <JFXPasswordField fx:id="psw" labelFloat="true" layoutX="163.0" layoutY="252.0" prefColumnCount="25" promptText="Mot de passe" stylesheets="@Ui.css" />
+      <JFXTextField fx:id="sname" labelFloat="true" layoutX="163.0" layoutY="181.0" prefColumnCount="25" promptText="Nom d'utilisateur" stylesheets="@Ui.css">
+         <font>
+            <Font name="Roboto Regular" size="12.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="Valider" layoutX="452.0" layoutY="403.0" onAction="#Signin" prefHeight="40.0" prefWidth="134.0" ripplerFill="#7c90cd" stylesheets="@Ui.css" text="Confirmer" textFill="#0a1772" />
+      <JFXButton fx:id="Insann" buttonType="RAISED" cancelButton="true" layoutX="14.0" layoutY="403.0" onAction="#Cls1" prefHeight="40.0" prefWidth="102.0" ripplerFill="#4059a9" stylesheets="@Ui.css" text="Annuler" textFill="#0a1772" />
+      <JFXRadioButton fx:id="Cpro" layoutX="233.0" layoutY="306.0" styleClass="custom-jfx-radio-button" stylesheets="@Ui.css" text="Professeur" />
+      <JFXRadioButton fx:id="Cetu" layoutX="233.0" layoutY="335.0" styleClass="custom-jfx-radio-button" stylesheets="@Ui.css" text="Etudiant" />
+   </children>
+</AnchorPane>

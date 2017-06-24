@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="210.0" prefWidth="600.0">
+         <children>
+            <Pane prefHeight="210.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="190.0" fitWidth="600.0">
+                     <image>
+                        <Image url="@Splash.png" />
+                     </image>
+                  </ImageView>
+                  <JFXProgressBar layoutY="139.0" maxHeight="200.0" maxWidth="20.0" minHeight="20.0" prefHeight="20.0" prefWidth="600.0" styleClass="custom-jfx-progress-bar-stroke" stylesheets="@Ui.css" />
+               </children></Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <bottom>
+        <HBox fx:id="hbox" style="-fx-background-color:#2c3e50;" BorderPane.alignment="CENTER">
+            <children>
+            <Region prefHeight="28.0" prefWidth="403.0" />
+            <JFXButton fx:id="Sub" buttonType="RAISED" onAction="#Submit" prefWidth="68.0" ripplerFill="#4f3db5">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                     <image>
+                        <Image url="@flag-map-marker.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            </children>
+        </HBox>
+    </bottom>
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" onAction="#FileChooser" text="Chargement" />
+
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Passer en mode chemin" onAction="#passerchemin" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="à propos" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <HBox fx:id="smain" prefHeight="40.0" prefWidth="1200.0">
+               <children>
+                  <ToolBar fx:id="tool" minHeight="20.0" minWidth="50.0" prefHeight="40.0" prefWidth="1201.0">
+                    <items>
+                        <Button fx:id="ag" mnemonicParsing="false" onAction="#LSlide" onMouseEntered="#LSlide">
+                           <graphic>
+                              <ImageView fitHeight="15.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@Hamburger.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                        <JFXButton fx:id="Play" buttonType="RAISED" onAction="#poly" prefWidth="55.0" ripplerFill="#a66868">
+                           <graphic>
+                              <ImageView fx:id="play" fitHeight="20.0" fitWidth="20.0">
+                                 <image>
+                                    <Image url="@music-player-play.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="inserer" lineSpacing="5.0" onAction="#handleButtonAction2" prefWidth="73.0" ripplerFill="#ba0677">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="Strtop" onAction="#Start" prefHeight="67.0" prefWidth="74.0" />
+                        <JFXButton fx:id="getSave" onAction="#Save1" prefWidth="88.0">
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0">
+                                 <image>
+                                    <Image url="@technology.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <Region prefHeight="30.0" prefWidth="432.0" />
+                        <Label fx:id="Lb" />
+                        <Button fx:id="UserId" mnemonicParsing="false" onAction="#RSlide" onMouseEntered="#RSlide" prefHeight="50.0" prefWidth="239.0">
+                           <font>
+                              <Font name="Roboto Regular" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="18.0" fitWidth="18.0">
+                                 <image>
+                                    <Image url="@man-user.png" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D minX="-10.0" />
+                                 </viewport>
+                              </ImageView>
+                           </graphic></Button>
+                        <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#Logout" prefHeight="26.0" prefWidth="41.0" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0">
+                                 <image>
+                                    <Image url="@logout-sign.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Button>
+                    </items>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ToolBar>
+               </children>
+                </HBox>
+            </children>
+        </VBox>
+    </top>
+   <center>
+        <StackPane fx:id="Span" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="927.0" BorderPane.alignment="CENTER">
+            <children>
+                <StackedAreaChart prefHeight="518.0" prefWidth="558.0">
+                    <xAxis>
+                  <NumberAxis autoRanging="false" label="Values for X-Axis" lowerBound="-75" tickUnit="5" upperBound="75" />
+               </xAxis>
+                    <yAxis>
+                  <NumberAxis autoRanging="false" label="Values for Y-Axis" lowerBound="-50" tickUnit="5" upperBound="50" />
+               </yAxis>
+                </StackedAreaChart>
+            <AnchorPane prefHeight="619.0" prefWidth="912.0">
+               <children>
+                  <Pane fx:id="pnstk" layoutX="63.0" layoutY="15.0" prefHeight="561.0" prefWidth="850.0">
+                     <rotationAxis>
+                        <Point3D z="5.0" />
+                     </rotationAxis></Pane>
+               </children></AnchorPane>
+            </children>
+        </StackPane>
+   </center>
+   <left>
+      <StackPane fx:id="root" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+
+</BorderPane>
